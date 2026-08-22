@@ -1,0 +1,9 @@
+{
+  "title": "NegPos Qwen3.5 Private LoRA Training Payload",
+  "id": "yasirmahmud/negpos-qwen35-lora-training-payload",
+  "licenses": [
+    {
+      "name": "other"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+Starting upload for file negpos_training_payload.bin
+  0%|          | 0.00/4.60M [00:00<?, ?B/s]  0%|          | 16.0k/4.60M [00:00<00:29, 163kB/s] 43%|████▎     | 2.00M/4.60M [00:00<00:00, 10.8MB/s]100%|██████████| 4.60M/4.60M [00:00<00:00, 6.22MB/s]
+Upload successful: negpos_training_payload.bin (5MB)
+Starting upload for file payload-manifest.json
+  0%|          | 0.00/156 [00:00<?, ?B/s]100%|██████████| 156/156 [00:00<00:00, 235B/s]
+Upload successful: payload-manifest.json (156B)
+Your private Dataset is being created. Please check progress at https://www.kaggle.com/datasets/yasirmahmud/negpos-qwen35-lora-training-payload
+Traceback (most recent call last):
+  File "/home/touhid/code/NegPos_kaggle_training/scripts/kaggle_lora_offload.py", line 434, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/touhid/code/NegPos_kaggle_training/scripts/kaggle_lora_offload.py", line 425, in main
+    publish(account, environment)
+  File "/home/touhid/code/NegPos_kaggle_training/scripts/kaggle_lora_offload.py", line 240, in publish
+    wait_for_dataset(reference, payload_hash, environment)
+  File "/home/touhid/code/NegPos_kaggle_training/scripts/kaggle_lora_offload.py", line 208, in wait_for_dataset
+    raise RuntimeError(f"Kaggle dataset processing failed: {output}")
+RuntimeError: Kaggle dataset processing failed: 403 Client Error: Forbidden for url: https://api.kaggle.com/v1/datasets.DatasetApiService/GetDatasetStatus

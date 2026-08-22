@@ -1,0 +1,70 @@
+[{"stream_name":"stdout","time":4.7022473510000005,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.2/11.2 MB 88.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":4.731515375,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 389.2/389.2 kB 30.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":4.762250034,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 516.0/516.0 kB 35.4 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":18.71316982,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.3/45.3 kB 1.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":18.800315747,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 819.2/819.2 kB 16.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":19.704694196,"data":"FLA_INSTALL_RETURN_CODE=0\n"}
+,{"stream_name":"stdout","time":19.704746461,"data":"GPU_TELEMETRY index,timestamp,utilization_gpu_pct,memory_used_mib,memory_total_mib,power_w\n"}
+,{"stream_name":"stdout","time":19.746881069,"data":"0, 2026/08/22 07:27:57.701, 0, 0, 15360, 9.75\n"}
+,{"stream_name":"stdout","time":19.756773121,"data":"1, 2026/08/22 07:27:57.711, 0, 0, 15360, 10.54\n"}
+,{"stream_name":"stdout","time":20.177543617,"data":"{\"split_counts\": {\"test\": 100, \"train\": 1800, \"validation\": 100}}\n"}
+,{"stream_name":"stdout","time":41.612477783,"data":"{\"gpu\": \"Tesla T4\", \"model\": \"Qwen/Qwen3.5-0.8B-Base\", \"precision\": \"bf16\", \"revision\": \"dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68\"}\n"}
+,{"stream_name":"stderr","time":41.787018505,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":49.76441363,"data":"0, 2026/08/22 07:28:27.724, 0, 107, 15360, 26.60\n"}
+,{"stream_name":"stdout","time":49.771848319,"data":"1, 2026/08/22 07:28:27.729, 0, 3, 15360, 11.03\n"}
+,{"stream_name":"stderr","time":62.694230657,"data":"[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d\n"}
+,{"stream_name":"stderr","time":62.942202101,"data":"\rLoading weights:   0%|          | 0/320 [00:00\u003c?, ?it/s]\rLoading weights:  88%|████████▊ | 280/320 [00:00\u003c00:00, 2770.40it/s]\rLoading weights: 100%|██████████| 320/320 [00:00\u003c00:00, 2796.54it/s]\n"}
+,{"stream_name":"stderr","time":63.09403851,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":63.094066902,"data":"  File \"/kaggle/working/negpos/scripts/train_loras.py\", line 406, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":63.094074091,"data":"    raise SystemExit(main())\n"}
+,{"stream_name":"stderr","time":63.094079373,"data":"                     ^^^^^^\n"}
+,{"stream_name":"stderr","time":63.094086827,"data":"  File \"/kaggle/working/negpos/scripts/train_loras.py\", line 397, in main\n"}
+,{"stream_name":"stderr","time":63.094274925,"data":"    manifests.append(train_one(kind, splits, tokenizer, args, dtype, precision_name))\n"}
+,{"stream_name":"stderr","time":63.094406889,"data":"                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":63.094419625,"data":"  File \"/kaggle/working/negpos/scripts/train_loras.py\", line 255, in train_one\n"}
+,{"stream_name":"stderr","time":63.094578966,"data":"    model = build_model(args, dtype).to(\"cuda\")\n"}
+,{"stream_name":"stderr","time":63.094588429,"data":"            ^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":63.094593163,"data":"  File \"/kaggle/working/negpos/scripts/train_loras.py\", line 220, in build_model\n"}
+,{"stream_name":"stderr","time":63.094768186,"data":"    model = get_peft_model(model, config)\n"}
+,{"stream_name":"stderr","time":63.09478112,"data":"            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":63.094785759,"data":"  File \"/usr/local/lib/python3.12/dist-packages/peft/mapping_func.py\", line 122, in get_peft_model\n"}
+,{"stream_name":"stderr","time":63.094973164,"data":"    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](\n"}
+,{"stream_name":"stderr","time":63.094982366,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":63.094986182,"data":"  File \"/usr/local/lib/python3.12/dist-packages/peft/peft_model.py\", line 1955, in __init__\n"}
+,{"stream_name":"stderr","time":63.09547389,"data":"    super().__init__(model, peft_config, adapter_name, **kwargs)\n"}
+,{"stream_name":"stderr","time":63.095483584,"data":"  File \"/usr/local/lib/python3.12/dist-packages/peft/peft_model.py\", line 129, in __init__\n"}
+,{"stream_name":"stderr","time":63.095630943,"data":"    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)\n"}
+,{"stream_name":"stderr","time":63.095641178,"data":"                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":63.095645078,"data":"  File \"/usr/local/lib/python3.12/dist-packages/peft/tuners/tuners_utils.py\", line 315, in __init__\n"}
+,{"stream_name":"stderr","time":63.095886721,"data":"    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage, state_dict=state_dict)\n"}
+,{"stream_name":"stderr","time":63.095898284,"data":"  File \"/usr/local/lib/python3.12/dist-packages/peft/tuners/tuners_utils.py\", line 913, in inject_adapter\n"}
+,{"stream_name":"stderr","time":63.096201621,"data":"    self._create_and_replace(\n"}
+,{"stream_name":"stderr","time":63.096209794,"data":"  File \"/usr/local/lib/python3.12/dist-packages/peft/tuners/lora/model.py\", line 269, in _create_and_replace\n"}
+,{"stream_name":"stderr","time":63.096387637,"data":"    new_module = self._create_new_module(lora_config, adapter_name, target, device_map=device_map, **kwargs)\n"}
+,{"stream_name":"stderr","time":63.096444744,"data":"                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":63.096450607,"data":"  File \"/usr/local/lib/python3.12/dist-packages/peft/tuners/lora/model.py\", line 418, in _create_new_module\n"}
+,{"stream_name":"stderr","time":63.096650228,"data":"    new_module = dispatcher(target, adapter_name, config=lora_config, **kwargs)\n"}
+,{"stream_name":"stderr","time":63.096686225,"data":"                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":63.096691348,"data":"  File \"/usr/local/lib/python3.12/dist-packages/peft/tuners/lora/torchao.py\", line 142, in dispatch_torchao\n"}
+,{"stream_name":"stderr","time":63.096869336,"data":"    if not is_torchao_available():\n"}
+,{"stream_name":"stderr","time":63.096879242,"data":"           ^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":63.096882768,"data":"  File \"/usr/local/lib/python3.12/dist-packages/peft/import_utils.py\", line 143, in is_torchao_available\n"}
+,{"stream_name":"stderr","time":63.097027781,"data":"    raise ImportError(\n"}
+,{"stream_name":"stderr","time":63.097042415,"data":"ImportError: Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported\n"}
+,{"stream_name":"stderr","time":65.796201061,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":65.796228102,"data":"  File \"/kaggle/src/script.py\", line 58, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":65.796232994,"data":"    subprocess.run(command, cwd=project, check=True)\n"}
+,{"stream_name":"stderr","time":65.796236513,"data":"  File \"/usr/lib/python3.12/subprocess.py\", line 571, in run\n"}
+,{"stream_name":"stderr","time":65.796240478,"data":"    raise CalledProcessError(retcode, process.args,\n"}
+,{"stream_name":"stderr","time":65.79625375,"data":"subprocess.CalledProcessError: Command '['/usr/bin/python3', '/kaggle/working/negpos/scripts/train_loras.py', '--data', '/kaggle/working/negpos/data/top2000_four_negatives.jsonl', '--output-root', '/kaggle/working/trained_loras']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":67.106685525,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":67.106740302,"data":"  File \"/kaggle/src/script.py\", line 78, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":67.106792607,"data":"    raise RuntimeError(failure)\n"}
+,{"stream_name":"stderr","time":67.106799606,"data":"RuntimeError: CalledProcessError: Command '['/usr/bin/python3', '/kaggle/working/negpos/scripts/train_loras.py', '--data', '/kaggle/working/negpos/data/top2000_four_negatives.jsonl', '--output-root', '/kaggle/working/trained_loras']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":69.539427316,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":69.539466167,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":69.827311055,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":69.827341206,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":71.548047393,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":72.873930254,"data":"[NbConvertApp] Writing 286879 bytes to __results__.html\n"}
+]

@@ -1,0 +1,12 @@
+Monitoring existing job yasirmahmud/negpos-qwen3-5-positive-negative-loras
+[2026-08-22T07:28:43.098297+00:00] yasirmahmud/negpos-qwen3-5-positive-negative-loras has status "KernelWorkerStatus.RUNNING"
+[2026-08-22T07:29:43.833058+00:00] yasirmahmud/negpos-qwen3-5-positive-negative-loras has status "KernelWorkerStatus.ERROR"
+Traceback (most recent call last):
+  File "/home/touhid/code/NegPos_kaggle_training/scripts/kaggle_lora_offload.py", line 458, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/touhid/code/NegPos_kaggle_training/scripts/kaggle_lora_offload.py", line 445, in main
+    wait_for_kernel(reference, environment)
+  File "/home/touhid/code/NegPos_kaggle_training/scripts/kaggle_lora_offload.py", line 401, in wait_for_kernel
+    raise RuntimeError(f"Kaggle job ended with status {state}: {reference}")
+RuntimeError: Kaggle job ended with status error: yasirmahmud/negpos-qwen3-5-positive-negative-loras

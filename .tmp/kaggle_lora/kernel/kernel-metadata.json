@@ -1,0 +1,17 @@
+{
+  "id": "yasirmahmud/negpos-qwen3-5-positive-negative-loras",
+  "title": "NegPos Qwen3.5 Positive Negative LoRAs",
+  "code_file": "run_training.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "yasirmahmud/negpos-qwen35-lora-training-payload"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

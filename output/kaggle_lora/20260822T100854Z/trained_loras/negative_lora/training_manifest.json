@@ -1,0 +1,52 @@
+{
+  "adapter": "negative",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "base_model_revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+  "precision": "fp16",
+  "hyperparameters": {
+    "epochs": 3,
+    "max_length": 2048,
+    "learning_rate": 0.0001,
+    "gradient_accumulation": 8,
+    "effective_batch_size": 8,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "in_proj_qkv",
+      "in_proj_z",
+      "in_proj_b",
+      "in_proj_a",
+      "out_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "negative_rotation": "one source-specific variant per epoch; index advances modulo four",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.3492188643643426,
+      "validation_loss": 0.3215116938110441,
+      "updates": 225
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.2449305460922834,
+      "validation_loss": 0.3058600962813944,
+      "updates": 450
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.19874078364939327,
+      "validation_loss": 0.3102454000338912,
+      "updates": 675
+    }
+  ],
+  "elapsed_seconds": 4508.307573080063
+}

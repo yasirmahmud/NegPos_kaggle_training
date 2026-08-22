@@ -1,0 +1,22 @@
+Payload already current: 106823d2c7ed
+Your kernel title does not resolve to the specified id. This may result in surprising behavior. We suggest making your title something that resolves to the specified id. See https://en.wikipedia.org/wiki/Clean_URL#Slug for more information on how slugs are determined.
+Kernel version 1 successfully pushed.  Please check progress at https://www.kaggle.com/code/yasirmahmud/negpos-qwen3-5-positive-negative-loras
+Submitted yasirmahmud/negpos-qwen35-positive-negative-loras
+Traceback (most recent call last):
+  File "/home/touhid/code/NegPos_kaggle_training/scripts/kaggle_lora_offload.py", line 447, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/touhid/code/NegPos_kaggle_training/scripts/kaggle_lora_offload.py", line 441, in main
+    wait_for_kernel(reference, environment)
+  File "/home/touhid/code/NegPos_kaggle_training/scripts/kaggle_lora_offload.py", line 390, in wait_for_kernel
+    state = status(reference, environment)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/touhid/code/NegPos_kaggle_training/scripts/kaggle_lora_offload.py", line 377, in status
+    result = run_kaggle(["kernels", "status", reference], environment, capture=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/touhid/code/NegPos_kaggle_training/scripts/kaggle_lora_offload.py", line 94, in run_kaggle
+    return subprocess.run(
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/touhid/code/COIL_RTL/.tools/kaggle-cli-current/bin/kaggle', 'kernels', 'status', 'yasirmahmud/negpos-qwen35-positive-negative-loras']' returned non-zero exit status 1.

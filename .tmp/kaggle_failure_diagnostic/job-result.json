@@ -1,0 +1,5 @@
+{
+  "schema_version": "1.0.0",
+  "status": "failed",
+  "failure": "CalledProcessError: Command '['/usr/bin/python3', '/kaggle/working/negpos/scripts/train_loras.py', '--data', '/kaggle/working/negpos/data/top2000_four_negatives.jsonl', '--output-root', '/kaggle/working/trained_loras']' returned non-zero exit status 1."
+}
