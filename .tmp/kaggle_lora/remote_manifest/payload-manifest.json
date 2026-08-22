@@ -1,5 +1,4 @@
 {
-  "schema_version": "1.0.0",
-  "archive": "negpos_training_payload.bin",
-  "sha256": "c1b20c5e55ed8d6c6ec3bf1d1f0213bdd635a356885e7f7c60c5703b840595cf"
+  "archive": "negpos_sanity_payload.bin",
+  "sha256": "87da955b3404207f6534ed4854e534425cd567c93a528277c69b327f789b1bcf"
 }

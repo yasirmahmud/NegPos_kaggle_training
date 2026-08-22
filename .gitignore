@@ -1,0 +1,46 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Generated training artifacts and scratch files
+.cache/
+.tmp/
+output/
+logs/
+checkpoints/
+wandb/
+*.log
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+
+# Packaging/build artifacts
+build/
+dist/
+*.egg-info/
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
